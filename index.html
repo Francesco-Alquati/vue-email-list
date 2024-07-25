@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="text-center p-3 text-white text-uppercase">Email list</h1>
+                        <h1 class="text-center p-3 text-white text-uppercase">Generatore di 10 email casuali</h1>
                     </div>
                 </div>
             </div>
@@ -25,12 +25,10 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="content text-center mt-5">
-                            <button class="btn btn-primary" @click="generateEmails()">Genera Email casuale</button>
-                            <div class="mt-5 fs-4 text-white">
-                                {{ email }}
-                            </div>
+                    <div class="col-12 mt-4">
+                        <button class="btn btn-lg btn-primary d-flex" @click="generateEmails()">Genera Email casuali</button>
+                        <div class="mt-4 fs-4 text-white" v-for="email,index in emails">
+                            {{index + 1}}.  {{ email }}
                         </div>
                     </div>
                 </div>
