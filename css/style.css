@@ -8,3 +8,8 @@ body{
     background: linear-gradient(180deg, rgba(38,74,86,1) 23%, rgba(136,145,137,1) 100%);
     height: 100vh;
 }
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 50px;
+}
