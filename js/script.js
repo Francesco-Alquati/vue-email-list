@@ -7,9 +7,6 @@ const { createApp } = Vue;
         
       }
     },
-    created (){
-        this.generateEmails();
-    },
     methods: {
         generateEmails(){
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((response) => {
