@@ -27,8 +27,10 @@
                 <div class="row">
                     <div class="col-12 mt-4">
                         <button class="btn btn-lg btn-primary d-flex" @click="generateEmails()">Genera Email casuali</button>
-                        <div class="mt-4 fs-4 text-white" v-for="email,index in emails">
-                            {{index + 1}}.  {{ email }}
+                        <div v-if="emails.length == 10">
+                            <div class="mt-4 fs-4 text-white" v-for="email,index in emails">
+                                {{index + 1}}.  {{ email }}
+                            </div>
                         </div>
                     </div>
                 </div>
